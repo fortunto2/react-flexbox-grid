@@ -3,7 +3,8 @@
 React flexboxgrid components
 included flexboxgrid.min.css and normalize.css
 
-
+`meteor add lifefilm:react-flexbox-grid
+`
 ## Code snippets
 
 ```jsx
