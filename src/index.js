@@ -1,3 +1,5 @@
-export Grid from './components/Grid';
-export Row from './components/Row';
-export Col from './components/Col';
+import Grid from './components/Grid';
+import Row from './components/Row';
+import Col from './components/Col';
+
+export { Grid, Col, Row };
