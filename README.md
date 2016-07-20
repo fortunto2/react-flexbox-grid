@@ -1,5 +1,9 @@
 # react-flexbox-grid
 
+React flexboxgrid components
+included flexboxgrid.min.css and normalize.css
+
+
 ## Code snippets
 
 ```jsx
