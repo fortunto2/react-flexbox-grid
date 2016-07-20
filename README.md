@@ -28,6 +28,8 @@ const App = React.createClass({
 
 <https://github.com/kristoferjoseph/flexboxgrid>
 
+based on:
+
 # react-flexbox-grid meteor
 
 <https://github.com/jimmiebtlr/react-flexbox-grid>

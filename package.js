@@ -14,7 +14,7 @@ Npm.depends({
 Package.onUse(function(api) {
   api.versionsFrom(['METEOR@1.0']);
   api.use([
-    'ecmascript@0.4.8',
+    'ecmascript@0.4.3',
     // 'nathantreid:css-modules@2.1.0',
     // 'kristoferjoseph:flexboxgrid',
   ]);
