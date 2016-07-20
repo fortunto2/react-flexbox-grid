@@ -8,7 +8,7 @@ Package.describe({
 
 Npm.depends({
   // react: '0.14.3',
-  flexboxgrid: '6.3.0',
+  // flexboxgrid: '6.3.0',
 });
 
 Package.onUse(function(api) {

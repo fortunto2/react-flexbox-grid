@@ -2,6 +2,14 @@ import React, {Component, PropTypes} from 'react';
 
 const ModificatorType = PropTypes.oneOfType([PropTypes.number, PropTypes.bool]);
 
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger
+// add for skip error with SSR
+Number.isInteger = Number.isInteger || function(value) {
+  return typeof value === 'number'
+         && Number.isFinite(value)
+         && !(value % 1);
+};
+
 export default class Col extends Component {
 
   constructor(props) {
@@ -19,6 +27,8 @@ export default class Col extends Component {
     };
   }
 
+
+
   render() {
     const classes = [];
 
@@ -34,6 +44,7 @@ export default class Col extends Component {
       if (this.props.hasOwnProperty(key) && this._classMap[key]) {
         let colBaseClass = this._classMap[key];
         colBaseClass = Number.isInteger(this.props[key]) ? (colBaseClass + '-' + this.props[key]) : colBaseClass;
+        // console.log(colBaseClass);
         classes.push(colBaseClass);
       }
     }
