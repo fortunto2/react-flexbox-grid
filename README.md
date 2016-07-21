@@ -35,6 +35,6 @@ based on:
 
 <https://github.com/jimmiebtlr/react-flexbox-grid>
 
-# react-flexbox-grid meteor
+# react-flexbox-grid 
 
 <https://github.com/roylee0704/react-flexbox-grid>

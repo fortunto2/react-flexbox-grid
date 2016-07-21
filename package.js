@@ -22,8 +22,8 @@ Package.onUse(function(api) {
   api.mainModule('src/index.js');
 
   api.addFiles([
-    'client/index.min.css',
-    'client/flexboxgrid.min.css'
+    'client/flexboxgrid.min.css',
+    // 'client/normalize.min.css',
   ], ['client']);
 
 
