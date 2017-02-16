@@ -2,6 +2,12 @@ import React, {Component, PropTypes} from 'react';
 
 const ModificatorType = PropTypes.oneOfType([PropTypes.number, PropTypes.bool]);
 
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isFinite
+// InternetExplorer does not support Number.isFinite (or Number.isInteger)
+Number.isFinite = Number.isFinite || function(value) {
+    return typeof value === 'number' && isFinite(value);
+}
+
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger
 // add for skip error with SSR
 Number.isInteger = Number.isInteger || function(value) {
