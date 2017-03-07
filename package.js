@@ -1,6 +1,6 @@
 Package.describe({
   name: 'lifefilm:react-flexbox-grid',
-  version: '0.9.6',
+  version: '0.9.8',
   summary: 'React flexboxgrid components',
   git: 'https://github.com/fortunto2/react-flexbox-grid.git',
   documentation: 'README.md'
